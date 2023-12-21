@@ -1,0 +1,55 @@
+---
+title: "Confluence-layout Example"
+filters:
+  - confluence-layout
+---
+
+## Markdown format
+
+::: {.grid}
+
+::: {.g-col-6}
+left side
+
+:::
+
+::: {.g-col-6}
+right side
+:::
+
+:::
+
+## Confluence format
+
+```{=confluence}
+<ac:layout-section ac:type="two_equal">
+     <ac:layout-cell>
+        <p> left side </p>
+     </ac:layout-cell>
+      <ac:layout-cell>
+        <p> right side </p>
+     </ac:layout-cell>
+  </ac:layout-section>
+
+```
+
+```{=confluence}
+<ac:layout-section ac:type="two_equal">
+     <ac:layout-cell>
+```
+
+Some content left
+
+```{=confluence}
+     </ac:layout-cell>
+      <ac:layout-cell>
+```
+
+Some content right
+
+```{=confluence}
+     </ac:layout-cell>
+  </ac:layout-section>
+
+```
+
